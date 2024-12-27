@@ -16,7 +16,7 @@ function displayProducts(products) {
             <p class="categories">${product.categories[0].id}</p>
             <p class="categories">${product.categories[1].id}</p>
             <p class="categories">${product.categories[2].id}</p>
-            <h2 class="product-name">${product.name.id}</h2>
+            <h2 class="product-name">${product.name}</h2>
             <p>${product.about}</p>
             `;
             container.appendChild(productDiv);
