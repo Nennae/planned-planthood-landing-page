@@ -3,82 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Planned Planthood</title>
   </head>
   <body>
-Planned Planthood
-
-Hem
-Historik
-Tips
-Kontakt
-
-Uppskattade växter
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.
-
-Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!
-
-Blommor
-Ätbart
-Grönska
-Gurka
-Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.
-Coolio
-2024-04-01
-
-Solälskande
-Lättodlat
-Ätbart
-Tomat
-En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.
-Anna Odlare
-2024-12-05
-
-Dekorativ
-Färgstark
-Tålig
-Blommor
-Pelargon
-En vacker och lättskött blomma som trivs både inne och ute under sommaren.
-Blomsterkalle
-2024-12-03
-
-Kryddor
-Doftande
-Solälskande
-Basilika
-En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.
-Krydd-Malin
-2024-12-07
-
-Snabbväxande
-Ätbart
-Grönska
-Sallad
-Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.
-Grönis
-2024-12-06
-
-Luftfuktande
-Grönska
-Dekorativ
-Ormbunke
-En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.
-Naturvännen
-2024-12-08
-
-Våra tidigare odlingar
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
-Planterade plantor
-
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?
-Telefon: 020-1234567
-info@plannedplant.com
-
-Hem
-Historik
-Tips
-Kontakt
+<div>
+    </div>
+    <header class="header">
+      <img src="./Assets/icons/logo.svg" alt="page logo">
+<h1 class="page-title">Planned Planthood</h1>
+<nav class="nav-bar">
+  <ul class="nav-list">
+    <li class="nav-item">Hem</li>
+    <li class="nav-item">Historik</li>
+    <li class="nav-item">Tips</li>
+    <li class="nav-item">Kontakt</li>
+  </ul>
+</nav>
+</header>
+<section class="banner-section">
+  <h2 class="banner-title">Uppskattade växter</h2>
+  <p class="banner-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.
+  </p>
+  <div class="banner-img-container">
+    <img src="./Assets/images/apple.jpg" alt=""><img src="./Assets/images/banana2.jpg" alt=""><img src="./Assets/images/melon3.jpg" alt=""><img src="./Assets/images/strawberries.jpg" alt=""><img src="./Assets/images/orange2.jpg" alt=""><img src="./Assets/images/oranges4.jpg" alt="">
+  </div>
+</section>
+<section id="product-section">
+  <!-- Rendered content via scripts -->
+</section>
+<section class="news-section">
+<p class="news-paragraph">Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</p>
+<!-- Look into form attributes! -->
+<form action="submit">
+  <label for="subscribe">E-post</label>
+  <input type="text" name="email" id="email" required readonly>
+  <button class="subscribe-btn">Skicka</button>
+</form>
+<div class="news-icon">
+  <img src="./Assets/icons/icon-planting.svg" alt="planting icon">
+</div>
+</section>
+<section class="info-section">
+  <img src="./Assets/icons/icon-seedling-2.svg" alt="plant icon">
+  <h3 class="info-title">Våra tidigare odlingar</h3>
+  <p class="info-paragraph">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis.
+    Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
+  </p>
+  <button class="plants-btn">Planterade plantor</button>
+</section>
+<footer class="footer">
+  <p class="footer-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis
+  fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
+  <div class="footer-contact">
+    <p class="contact-item">Telefon: 020-1234567</p>
+    <p class="contact-item">info@plannedplant.com</p>
+  </div>
+  <ul class="footer-nav">
+    <img src="./Assets/icons/icon-phone.svg" alt="">
+    <li class="footer-nav-item">Hem</li>
+    <img src="./Assets/icons/icon-email.svg" alt="">
+    <li class="footer-nav-item">Historik</li>
+    <li class="footer-nav-item">Tips</li>
+    <li class="footer-nav-item">Kontakt</li>
+  </ul>
+</footer>
+<script src="./scripts/app.js" type="module"></script>
+<script src="./scripts/data.js" type="module"></script>
   </body>
 </html>
