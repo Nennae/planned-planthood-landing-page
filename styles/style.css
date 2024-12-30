@@ -24,7 +24,8 @@ button,
 }
 
 .header {
-      padding: 0.7em;
+      min-height: 10vh;
+      padding-left: 0.7em;
 
       .logo {
             max-width: 3em;
@@ -32,7 +33,17 @@ button,
 
       .hamburger-menu {
             max-width: 4em;
+            height: 67px;
+            filter: invert(35%) sepia(10%) saturate(6711%) hue-rotate(133deg) brightness(100%) contrast(92%);
       }
+
+      .svg-container:hover {
+            background-color: var(--clr-green-400);
+            transition: 0.3s ease-in-out;
+      }
+            .hamburger-menu:hover {
+                  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg) brightness(200%) contrast(103%);
+            }
 
       .page-title,
       .nav-item {
@@ -40,6 +51,17 @@ button,
             color: var(--clr-green-400);
             letter-spacing: .05em;
             line-height: 0.9;
+      }
+
+      .nav-item {       
+            height: 67px;
+            padding: 0 1em;
+            
+            &:hover {
+                  background-color: var(--clr-green-400);
+                        color: var(--clr-neutral-100);
+                        
+            }
       }
 }
 
@@ -91,6 +113,12 @@ button,
             .subscribe-btn {
                   padding: 0.6em 1.5em;
                   border-radius: 20px;
+                  border: 1px solid var(--clr-green-400);
+
+                  &:hover {
+                        background-color: var(--clr-neutral-100);
+                        color: var(--clr-green-400);
+                  }
             }
       }
 }
@@ -136,6 +164,12 @@ button,
       .plants-btn {
             padding: 0.6em 1.5em;
             border-radius: 20px;
+            border: 1px solid var(--clr-green-400);
+
+            &:hover {
+                  background-color: var(--clr-neutral-100);
+                  color: var(--clr-green-400);
+            }
       }
 }
 
@@ -164,5 +198,10 @@ button,
 
       .contact-item {
             font-weight: var(--fw-semi-bold);
+            color: inherit;
+
+            &:hover {
+                  text-decoration: underline;
+            }
       }
 }

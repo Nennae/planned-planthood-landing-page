@@ -1,14 +1,18 @@
 /* TO-DO: */
-/* Responsively scaling image containers */
-/* Responsive for tablets and larger screens */
-/*  Get random avatars from API and render next to dates and usernames  */
+
+/*  Get random avatars from API and render next to date and username */
 /* Make form accessible */
 /* Add hover states */
 
 .header {
       display: flex;
       justify-content: space-between;
+
+      .head-item-wrap {
+      display: flex;
+      justify-content: center;
       align-items: center;
+      }
 
       .nav-bar {
             display: none;
@@ -18,7 +22,11 @@
 @media screen and (min-width: 1100px) {
 
       .header {
-            justify-content: space-evenly;
+            justify-content: center;
+
+            .head-item-wrap {
+                  gap: 20em;
+            }
 
             .nav-bar {
                   display: block;
@@ -26,7 +34,10 @@
 
             .nav-list {
                   display: flex;
-                  gap: 2em;
+                  /* gap: 1.5em; */
+            }
+            .nav-item {
+                  align-content: center;
             }
 
             .hamburger-menu {
@@ -34,6 +45,7 @@
             }
       }
 }
+
 
 .brand-wrapper {
       display: flex;
@@ -214,16 +226,18 @@
       }
 }
 
- @media screen and (min-width: 1100px) {
-       .footer {
+@media screen and (min-width: 1100px) {
+      .footer {
             display: flex;
             justify-content: space-evenly;
-             .nav-bar {
+
+            .nav-bar {
                   display: block;
+
                   .nav-item {
                         margin-bottom: 1em;
                   }
-             }
-       }
+            }
+      }
 
- }
+}
