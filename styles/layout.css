@@ -1,0 +1,229 @@
+/* TO-DO: */
+/* Responsively scaling image containers */
+/* Responsive for tablets and larger screens */
+/*  Get random avatars from API and render next to dates and usernames  */
+/* Make form accessible */
+/* Add hover states */
+
+.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-bar {
+            display: none;
+      }
+}
+
+@media screen and (min-width: 1100px) {
+
+      .header {
+            justify-content: space-evenly;
+
+            .nav-bar {
+                  display: block;
+            }
+
+            .nav-list {
+                  display: flex;
+                  gap: 2em;
+            }
+
+            .hamburger-menu {
+                  display: none;
+            }
+      }
+}
+
+.brand-wrapper {
+      display: flex;
+      gap: 1em;
+}
+
+.banner-section,
+.news-section,
+.info-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+}
+
+.form-container,
+.info-container {
+      display: flex;
+      flex-direction: column;
+}
+
+.plants-btn {
+      align-self: flex-end;
+}
+
+@media screen and (min-width: 1100px) {
+      .news-section {
+            flex-direction: row-reverse;
+            justify-content: center;
+            gap: 5em;
+      }
+
+      .form-container {
+            display: flex;
+            flex-direction: column;
+
+            .news-paragraph {
+                  text-align: start;
+            }
+      }
+
+      .info-section {
+            flex-direction: row;
+            justify-content: center;
+            gap: 5em;
+
+            .info-container {
+                  display: flex;
+                  flex-direction: column;
+
+                  .info-title,
+                  .info-paragraph {
+                        text-align: start;
+                  }
+            }
+      }
+}
+
+.banner-section {
+
+      .img-grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 10em);
+            grid-template-rows: repeat(3, 10em);
+            align-items: stretch;
+
+            .grid-item {
+                  object-fit: cover;
+                  width: 100%;
+            }
+      }
+
+      @media screen and (min-width: 600px) {
+
+            .img-grid-container {
+                  grid-template-columns: repeat(3, 15em);
+                  grid-template-rows: repeat(2, 15em);
+            }
+
+      }
+
+      @media screen and (min-width: 1100px) {
+
+            .img-grid-container {
+                  grid-template-columns: repeat(6, 10em);
+                  grid-template-rows: repeat(2, 20em);
+
+                  .grid-item:nth-child(-n + 1) {
+                        grid-column: span 2;
+                        grid-row: span 2;
+                  }
+
+                  .grid-item:nth-child(4) {
+                        grid-column: span 2;
+                  }
+
+                  .grid-item:nth-child(n + 5) {
+                        grid-column: span 2;
+                  }
+            }
+      }
+}
+
+.news-section {
+
+      .input-wrapper {
+            display: flex;
+
+            input {
+                  flex-grow: 2;
+            }
+      }
+
+}
+
+#product-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+
+      .product-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            min-width: 15em;
+            justify-content: space-evenly;
+
+            .product-img {
+                  object-fit: cover;
+                  height: 15em;
+            }
+
+            .categories {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 0.5em;
+            }
+      }
+}
+
+@media screen and (min-width: 1100px) {
+
+      #product-section {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .product-container {
+                  max-width: 15em;
+            }
+
+            .product-img {
+                  min-height: 18em !important;
+            }
+      }
+}
+
+@media screen and (min-width: 600px) {
+
+      .product-container {
+            flex-basis: 48%;
+
+            .product-img {
+                  min-height: 20em;
+            }
+      }
+}
+
+.footer {
+      .footer-contact {
+            display: flex;
+            gap: 1em;
+            margin: 1em 0;
+      }
+
+      .nav-bar {
+            display: none;
+      }
+}
+
+ @media screen and (min-width: 1100px) {
+       .footer {
+            display: flex;
+            justify-content: space-evenly;
+             .nav-bar {
+                  display: block;
+                  .nav-item {
+                        margin-bottom: 1em;
+                  }
+             }
+       }
+
+ }

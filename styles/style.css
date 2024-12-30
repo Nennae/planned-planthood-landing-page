@@ -1,2 +1,168 @@
 @import url(global.css);
 @import url(layout.css);
+
+.header,
+.img-grid-container,
+.product-container,
+.info-section,
+.news-section {
+      background-color: var(--clr-neutral-100);
+}
+
+.news-icon,
+.info-icon,
+button,
+.footer {
+      background-color: var(--clr-green-400);
+}
+
+.page-title,
+.nav-item:not(.footer .nav-item),
+.subscribe-btn,
+.category {
+      text-transform: uppercase;
+}
+
+.header {
+      padding: 0.7em;
+
+      .logo {
+            max-width: 3em;
+      }
+
+      .hamburger-menu {
+            max-width: 4em;
+      }
+
+      .page-title,
+      .nav-item {
+            font-size: var(--fs-500);
+            color: var(--clr-green-400);
+            letter-spacing: .05em;
+            line-height: 0.9;
+      }
+}
+
+.banner-section {
+      padding: 3em 1em;
+
+      .banner-paragraph {
+            text-align: center;
+      }
+
+      .img-grid-container {
+            padding: 1em;
+            box-shadow: var(--border-shadow);
+      }
+}
+
+.news-section {
+      padding: 4em 0;
+
+      .news-icon {
+            border-radius: 50%;
+            padding: 3em;
+
+            img {
+                  max-width: 6em;
+            }
+      }
+
+      .form-container {
+            text-align: center;
+            max-width: 30rem;
+            padding: 0 2em;
+
+            .news-paragraph {
+                  margin-bottom: 1em;
+            }
+      }
+
+      .input-wrapper {
+            border: 1px solid var(--clr-neutral-400);
+            border-radius: 30px;
+            padding: 0.2em 0.2em 0.2em 3em;
+
+            input {
+                  background-color: inherit;
+                  border: none;
+            }
+
+            .subscribe-btn {
+                  padding: 0.6em 1.5em;
+                  border-radius: 20px;
+            }
+      }
+}
+
+#product-section {
+      padding: 3em 1em;
+
+      .product-container {
+            padding: 1em;
+            box-shadow: var(--border-shadow);
+
+            .category {
+                  background: rgb(38, 154, 226);
+                  text-align: center;
+                  padding: 0.4em 1em;
+                  border-radius: 15px;
+                  font-size: .65rem;
+                  color: white;
+            }
+      }
+}
+
+.info-section {
+      text-align: center;
+      padding: 4em 2em;
+      margin-bottom: 3em;
+
+      .info-title,
+      .info-paragraph {
+            margin-bottom: 1em;
+      }
+
+      .info-icon {
+            padding: 3em;
+            border-radius: 50%;
+
+            img {
+                  min-width: 5em;
+                  max-height: 5em;
+            }
+      }
+
+      .plants-btn {
+            padding: 0.6em 1.5em;
+            border-radius: 20px;
+      }
+}
+
+.footer {
+      padding: 3em 1em;
+      color: var(--clr-neutral-100);
+
+      .brand-wrapper {
+            margin-bottom: 2em;
+
+            .page-title-footer {
+                  font-size: var(--fs-500);
+                  letter-spacing: .05em;
+                  line-height: 0.9;
+            }
+      }
+
+      .logo-footer {
+            max-width: 2.5em;
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg) brightness(200%) contrast(103%);
+      }
+
+      .footer-paragraph {
+            line-height: 1.5;
+      }
+
+      .contact-item {
+            font-weight: var(--fw-semi-bold);
+      }
+}
