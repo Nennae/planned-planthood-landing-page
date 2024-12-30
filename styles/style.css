@@ -25,7 +25,7 @@ button,
 }
 
 .header {
-      max-height: 6vh;
+      min-height: 8vh;
       padding-left: 0.7em;
 
       .logo {
@@ -55,7 +55,7 @@ button,
       }
 
       .nav-item {       
-            min-height: 6vh;
+            min-height: 8vh;
             padding: 0 1em;
             
             &:hover {
