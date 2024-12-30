@@ -2,7 +2,6 @@
 
 /*  Get random avatars from API and render next to date and username */
 /* Make form accessible */
-/* Add hover states */
 
 .header {
       display: flex;
@@ -108,7 +107,7 @@
 
       .img-grid-container {
             display: grid;
-            grid-template-columns: repeat(2, 10em);
+            grid-template-columns: repeat(2, minmax(7em, 20em));
             grid-template-rows: repeat(3, 10em);
             align-items: stretch;
 

@@ -1,6 +1,7 @@
 @import url(global.css);
 @import url(layout.css);
 
+
 .header,
 .img-grid-container,
 .product-container,
@@ -24,7 +25,7 @@ button,
 }
 
 .header {
-      min-height: 10vh;
+      height: min-content;
       padding-left: 0.7em;
 
       .logo {
@@ -33,7 +34,7 @@ button,
 
       .hamburger-menu {
             max-width: 4em;
-            height: 67px;
+            height: inherit;
             filter: invert(35%) sepia(10%) saturate(6711%) hue-rotate(133deg) brightness(100%) contrast(92%);
       }
 
@@ -54,7 +55,7 @@ button,
       }
 
       .nav-item {       
-            height: 67px;
+            min-height: 10vh;
             padding: 0 1em;
             
             &:hover {
@@ -92,8 +93,7 @@ button,
 
       .form-container {
             text-align: center;
-            max-width: 30rem;
-            padding: 0 2em;
+            width: min-content;
 
             .news-paragraph {
                   margin-bottom: 1em;
