@@ -3,14 +3,15 @@
 /*  Get random avatars from API and render next to date and username */
 /* Make form accessible */
 
+
 .header {
       display: flex;
       justify-content: space-between;
 
       .head-item-wrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
       }
 
       .nav-bar {
@@ -33,8 +34,8 @@
 
             .nav-list {
                   display: flex;
-                  /* gap: 1.5em; */
             }
+
             .nav-item {
                   align-content: center;
             }

@@ -25,7 +25,7 @@ button,
 }
 
 .header {
-      min-height: 8vh;
+      max-height: 4em;
       padding-left: 0.7em;
 
       .logo {
@@ -54,8 +54,12 @@ button,
             line-height: 0.9;
       }
 
+      .page-title {
+            padding: 1em 0;
+      }
+
       .nav-item {       
-            min-height: 8vh;
+            min-height: 3.5em;
             padding: 0 1em;
             
             &:hover {
@@ -126,16 +130,25 @@ button,
 #product-section {
       padding: 3em 1em;
 
+      .overlay-icon {
+            position: absolute;
+            max-width: 3em;
+            opacity: 60%;
+            top: 2em;
+            right: 2em;
+      }
+
       .product-container {
+            position: relative;
             padding: 1em;
             box-shadow: var(--border-shadow);
 
             .category {
-                  background: rgb(38, 154, 226);
+                  background: rgb(1, 61, 99);
                   text-align: center;
                   padding: 0.4em 1em;
                   border-radius: 15px;
-                  font-size: .65rem;
+                  font-size: .8rem;
                   color: white;
             }
       }
