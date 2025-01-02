@@ -81,9 +81,6 @@
                   text-align: start;
             }
 
-            input {
-                  min-width: 15em;
-            }
       }
 
       .info-section {
@@ -152,8 +149,11 @@
 
       .input-wrapper {
             display: flex;
-      }
 
+            .subscribe-btn {
+                  flex: 1;
+            }
+      }
 }
 
 #product-section {
@@ -206,6 +206,7 @@
 
 @media screen and (min-width: 600px) {
 
+      /* enables two column layout on tablet */
       .product-container {
             flex-basis: 48%;
 
