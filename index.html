@@ -1,101 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Planned Planthood</title>
-  </head>
-  <body>
-    <div class="wrapper">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Planned Planthood</title>
+</head>
+
+<body>
+  <div class="wrapper">
     <header class="header">
       <div class="head-item-wrap">
-      <div class="brand-wrapper">
-      <img class="logo" src="./Assets/icons/logo.svg" alt="page logo">
-<h1 class="page-title">Planned<br>Planthood</h1>
-</div>
-<nav class="nav-bar">
-  <ul class="nav-list">
-    <li class="nav-item"><a href="#">Hem</a></li>
-    <li class="nav-item"><a href="#">Historik</a></li>
-    <li class="nav-item"><a href="#">Tips</a></li>
-    <li class="nav-item"><a href="#">Kontakt</a></li>
-  </ul>
-</nav>
-</div>
-<div class="svg-container">
-<img class="hamburger-menu" src="./Assets/icons/icon-hamburger-menu.svg" alt="">
-</div>
-</header>
-<section class="banner-section">
-  <h2 class="banner-title">Uppskattade växter</h2>
-  <p class="banner-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.
-  </p>
-  <div class="img-grid-container">
-    <img class="grid-item" src="./Assets/icons/images/apple.jpg" alt="apples"><img class="grid-item" src="./Assets/icons/images/banana2.jpg" alt="bananas"><img class="grid-item" src="./Assets/icons/images/melon3.jpg" alt="melons"><img class="grid-item" src="./Assets/icons/images/strawberries.jpg" alt="strawberries"><img class="grid-item" src="./Assets/icons/images/orange2.jpg" alt=""><img class="grid-item" src="./Assets/icons/images/oranges4.jpg" alt="oranges">
+        <div class="brand-wrapper">
+          <img class="logo" src="./Assets/icons/logo.svg" alt="page logo">
+          <h1 class="page-title">Planned<br>Planthood</h1>
+        </div>
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Hem</a></li>
+            <li class="nav-item"><a href="#">Historik</a></li>
+            <li class="nav-item"><a href="#">Tips</a></li>
+            <li class="nav-item"><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="svg-container">
+        <img class="hamburger-menu" src="./Assets/icons/icon-hamburger-menu.svg" alt="">
+      </div>
+    </header>
+    <section class="banner-section">
+      <h2 class="banner-title">Uppskattade växter</h2>
+      <p class="banner-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.
+      </p>
+      <div class="img-grid-container">
+        <img class="grid-item" src="./Assets/icons/images/apple.jpg" alt="apples"><img class="grid-item"
+          src="./Assets/icons/images/banana2.jpg" alt="bananas"><img class="grid-item"
+          src="./Assets/icons/images/melon3.jpg" alt="melons"><img class="grid-item"
+          src="./Assets/icons/images/strawberries.jpg" alt="strawberries"><img class="grid-item"
+          src="./Assets/icons/images/orange2.jpg" alt=""><img class="grid-item" src="./Assets/icons/images/oranges4.jpg"
+          alt="oranges">
+      </div>
+    </section>
+    <section class="news-section">
+      <div class="news-icon">
+        <img src="./Assets/icons/icon-planting.svg" alt="planting icon">
+      </div>
+      <div class="form-container">
+        <h2 class="news-paragraph">Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
+        <form action="submit">
+          <div class="input-wrapper">
+            <label for="email" hidden aria-label="email">email</label>
+            <input type="text" name="email" id="email" placeholder="email@domain.com">
+            <button class="subscribe-btn">Skicka</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="product-section">
+      <!-- Rendered content via scripts -->
+    </section>
+    <section class="info-section">
+      <div class="info-icon">
+        <img src="./Assets/icons/icon-seedling.svg" alt="plant icon">
+      </div>
+      <div class="info-container">
+        <h2 class="info-title">Våra tidigare odlingar</h2>
+        <p class="info-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt
+          veritatis.
+          Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat
+          doloribus?
+        </p>
+
+        <button class="plants-btn">Planterade plantor</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="brand-wrapper">
+          <img class="logo-footer" src="./Assets/icons/logo.svg" alt="page logo">
+          <h1 class="page-title page-title-footer">Planned<br>Planthood</h1>
+        </div>
+        <p class="footer-paragraph footer-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam
+          ducimus aut sint atque ullam alias perspiciatis
+          fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
+        <div class="footer-contact">
+          <img src="./Assets/icons/icon-phone.svg" alt="">
+          <a href="#" class="contact-item footer-item">Telefon: 020-1234567</a>
+        </div>
+        <div class="footer-contact">
+          <img src="./Assets/icons/icon-email.svg" alt="">
+          <a href="#" class="contact-item footer-item">info@plannedplant.com</a>
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="footer-links" href="#">Hem</a></li>
+          <li class="nav-item"><a class="footer-links" href="#">Historik</a></li>
+          <li class="nav-item"><a class="footer-links" href="#">Tips</a></li>
+          <li class="nav-item"><a class="footer-links" href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </footer>
   </div>
-</section>
-<section class="news-section">
-  <div class="news-icon">
-    <img src="./Assets/icons/icon-planting.svg" alt="planting icon">
-  </div>
-  <div class="form-container">
-<h2 class="news-paragraph">Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
-<!-- Look into form attributes! -->
-<form action="submit">
-  <div class="input-wrapper">
-  <label for="email" hidden aria-label="email">email</label>
-  <input type="text" name="email" id="email" placeholder="email@domain.com">
-  <button class="subscribe-btn">Skicka</button>
-  </div>
-</form>
-</div>
-</section>
-<section id="product-section">
-  <!-- Rendered content via scripts -->
-</section>
-<section class="info-section">
-  <div class="info-icon">
-  <img src="./Assets/icons/icon-seedling.svg" alt="plant icon">
-  </div>
-  <div class="info-container">
-  <h2 class="info-title">Våra tidigare odlingar</h2>
-  <p class="info-paragraph">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis.
-    Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
-  </p>
-  
-  <button class="plants-btn">Planterade plantor</button>
-  </div>
-</section>
-<footer class="footer">
-  <div class="footer-info">
-  <div class="brand-wrapper">
-    <img class="logo-footer" src="./Assets/icons/logo.svg" alt="page logo">
-    <h1 class="page-title page-title-footer">Planned<br>Planthood</h1>
-  </div>
-  <p class="footer-paragraph footer-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis
-  fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
-  <div class="footer-contact">
-    <img src="./Assets/icons/icon-phone.svg" alt="">
-    <a href="#" class="contact-item footer-item">Telefon: 020-1234567</a>
-    </div>
-    <div class="footer-contact">
-    <img src="./Assets/icons/icon-email.svg" alt="">
-    <a href="#" class="contact-item footer-item">info@plannedplant.com</a>
-  </div>
-  </div>
-  <nav class="nav-bar">
-    <ul class="nav-list">
-      <li class="nav-item"><a class="footer-links" href="#">Hem</a></li>
-      <li class="nav-item"><a class="footer-links" href="#">Historik</a></li>
-      <li class="nav-item"><a class="footer-links" href="#">Tips</a></li>
-      <li class="nav-item"><a class="footer-links" href="#">Kontakt</a></li>
-    </ul>
-  </nav>
-</footer>
-</div>
-<script src="./scripts/app.js" type="module"></script>
-<script src="./scripts/data.js" type="module"></script>
-  </body>
+  <script src="./scripts/app.js" type="module"></script>
+  <script src="./scripts/data.js" type="module"></script>
+</body>
+
 </html>

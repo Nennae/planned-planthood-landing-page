@@ -58,9 +58,10 @@ button:hover {
             background-color: var(--clr-green-400);
             transition: 0.3s ease-in-out;
       }
-            .hamburger-menu:hover {
-                  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg) brightness(200%) contrast(103%);
-            }
+
+      .hamburger-menu:hover {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg) brightness(200%) contrast(103%);
+      }
 
       .page-title,
       .nav-item {
@@ -74,14 +75,14 @@ button:hover {
             padding: 1em 0;
       }
 
-      a {       
+      a {
             padding: 1em;
 
             &:hover {
-                        background-color: var(--clr-green-400);
-                        color: var(--clr-neutral-100);
-                        transition: 0.3s ease-in-out;
-                  }
+                  background-color: var(--clr-green-400);
+                  color: var(--clr-neutral-100);
+                  transition: 0.3s ease-in-out;
+            }
       }
 }
 
@@ -177,6 +178,7 @@ button:hover {
                   border-radius: 50%;
                   border: 1px solid var(--clr-robust);
             }
+
             .user {
                   font-weight: var(--fw-semi-bold);
             }
@@ -192,6 +194,7 @@ button:hover {
       .info-paragraph {
             margin-bottom: 1em;
       }
+
       .info-paragraph {
             padding: 0 2em;
       }
@@ -246,5 +249,5 @@ button:hover {
                   text-decoration: underline;
             }
       }
-      
+
 }

@@ -183,11 +183,11 @@
                   gap: 0.5em;
             }
 
-                        .user-info {
-                              display: flex;
-                              gap: 0.5em;
-                              align-items: center;
-                        }
+            .user-info {
+                  display: flex;
+                  gap: 0.5em;
+                  align-items: center;
+            }
       }
 }
 
