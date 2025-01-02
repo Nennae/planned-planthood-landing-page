@@ -1,6 +1,3 @@
-/* TO-DO: */
-
-/*  Get random avatars from API and render next to date and username */
 
 .header {
       display: flex;
@@ -83,6 +80,10 @@
             .news-paragraph {
                   text-align: start;
             }
+
+            input {
+                  min-width: 15em;
+            }
       }
 
       .info-section {
@@ -151,10 +152,6 @@
 
       .input-wrapper {
             display: flex;
-
-            input {
-                  flex-grow: 1;
-            }
       }
 
 }
