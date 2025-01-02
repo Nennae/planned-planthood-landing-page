@@ -108,9 +108,9 @@ button:hover {
 .news-section {
       padding: 4em 0;
 
-            img {
-                  max-width: 6em;
-            }
+      img {
+            max-width: 6em;
+      }
 
 
       .form-container {
@@ -203,10 +203,10 @@ button:hover {
             padding: 0 2em;
       }
 
-            img {
-                  min-width: 5em;
-                  max-height: 5em;
-            }
+      img {
+            min-width: 5em;
+            max-height: 5em;
+      }
 
       .plants-btn {
             padding: 0.5em 1.4em;
