@@ -33,6 +33,12 @@ input,
       cursor: pointer;
 }
 
+.news-icon,
+.info-icon {
+      padding: 3em;
+      border-radius: 50%;
+}
+
 button:hover {
       background-color: var(--clr-neutral-100);
       color: var(--clr-green-400);
@@ -102,14 +108,10 @@ button:hover {
 .news-section {
       padding: 4em 0;
 
-      .news-icon {
-            border-radius: 50%;
-            padding: 3em;
-
             img {
                   max-width: 6em;
             }
-      }
+
 
       .form-container {
             text-align: center;
@@ -124,7 +126,7 @@ button:hover {
       .input-wrapper {
             border: 1px solid var(--clr-neutral-400);
             border-radius: 30px;
-            padding: 0.2em 0.2em 0.2em 3em;
+            padding: 0.2em 0.2em 0.2em 1.5em;
 
             &:focus-within {
                   outline: 1px solid rgb(0, 72, 255);
@@ -134,6 +136,7 @@ button:hover {
                   background-color: inherit;
                   border: none;
                   padding: 0 1em;
+                  color: var(--clr-neutral-800);
 
                   &:focus-visible {
                         outline: none;
@@ -151,6 +154,7 @@ button:hover {
 #product-section {
       padding: 3em 1em;
 
+      /* positioning of svg on top of img */
       .overlay-icon {
             position: absolute;
             max-width: 3em;
@@ -199,15 +203,10 @@ button:hover {
             padding: 0 2em;
       }
 
-      .info-icon {
-            padding: 3em;
-            border-radius: 50%;
-
             img {
                   min-width: 5em;
                   max-height: 5em;
             }
-      }
 
       .plants-btn {
             padding: 0.5em 1.4em;
