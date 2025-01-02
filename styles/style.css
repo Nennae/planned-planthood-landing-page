@@ -132,6 +132,7 @@ button:hover {
             input {
                   background-color: inherit;
                   border: none;
+                  padding: 0 1em;
 
                   &:focus-visible {
                         outline: none;
