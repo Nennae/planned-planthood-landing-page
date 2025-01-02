@@ -134,7 +134,7 @@
 
             .img-grid-container {
                   grid-template-columns: repeat(6, 10em);
-                  grid-template-rows: repeat(2, 20em);
+                  grid-template-rows: repeat(2, 16em);
 
                   .grid-item:nth-child(-n + 1) {
                         grid-column: span 2;
