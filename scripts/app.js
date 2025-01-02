@@ -32,9 +32,12 @@ function displayProducts(products) {
             </div>
             <h3 class="product-name">${product.name}</h3>
             <p class="about">${product.about}</p>
-            <div class="userinfo">
-            <p class="date">${product.date}</p>
+            <div class="user-info">
+            <img class="avatars" src="${product.avatar}"/>
+            <div>
             <p class="user">${product.user}</p>
+            <p class="date">${product.date}</p>
+            </div>
             </div>
             `;
 

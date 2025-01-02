@@ -1,7 +1,7 @@
 /* TO-DO: */
 
 /*  Get random avatars from API and render next to date and username */
-/* Make form accessible */
+
 .header {
       display: flex;
       justify-content: space-between;
@@ -182,6 +182,12 @@
                   flex-wrap: wrap;
                   gap: 0.5em;
             }
+
+                        .user-info {
+                              display: flex;
+                              gap: 0.5em;
+                              align-items: center;
+                        }
       }
 }
 

@@ -168,6 +168,15 @@ button:hover {
                   font-size: .8rem;
                   color: white;
             }
+
+            .avatars {
+                  max-width: 3.5em;
+                  border-radius: 50%;
+                  border: 1px solid var(--clr-robust);
+            }
+            .user {
+                  font-weight: var(--fw-semi-bold);
+            }
       }
 }
 
