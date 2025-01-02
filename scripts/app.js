@@ -44,13 +44,7 @@ function displayProducts(products) {
             `;
 
     container.appendChild(productDiv);
-
-    // adds focus to all product containers
-    productDiv.addEventListener("keyup", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        productDiv.focus();
-      }
-    });
+    
 
     function assignColors() {
       const categoryElements = productDiv.getElementsByClassName("category");
