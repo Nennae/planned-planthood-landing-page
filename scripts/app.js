@@ -11,6 +11,8 @@ function displayProducts(products) {
   products.forEach((product) => {
     const productDiv = document.createElement("div");
     productDiv.classList.add("product-container");
+    // below attribute is set to make elements focusable 
+    productDiv.setAttribute("tabindex", "0");
     productDiv.innerHTML = `
     <img class="overlay-icon" src="/Assets/icons/icon-seedling-2.svg" alt="seedling icon"/>
             <img class="product-img" src="${product.image}" alt=${
@@ -42,6 +44,13 @@ function displayProducts(products) {
             `;
 
     container.appendChild(productDiv);
+
+    // adds focus to all product containers
+    productDiv.addEventListener("keyup", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        productDiv.focus();
+      }
+    });
 
     function assignColors() {
       const categoryElements = productDiv.getElementsByClassName("category");
