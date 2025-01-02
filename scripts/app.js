@@ -61,13 +61,13 @@ function displayProducts(products) {
             element.style.backgroundColor = "hsl(303, 55%, 47%)";
             break;
           case "Solälskande":
-            element.style.backgroundColor = "hsl(26, 93.40%, 41.60%)";
+            element.style.backgroundColor = "hsl(26, 94.60%, 36.10%)";
             break;
           case "Dekorativ":
             element.style.backgroundColor = "hsl(278, 79%, 40%)";
             break;
           case "Ätbart":
-            element.style.backgroundColor = "hsl(180, 92.40%, 31.00%)";
+            element.style.backgroundColor = "hsl(306, 91.90%, 24.30%)";
             break;
           case "Lättodlat":
             element.style.backgroundColor = "hsl(224, 86%, 58%)";
