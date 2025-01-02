@@ -12,7 +12,7 @@ function displayProducts(products) {
     const productDiv = document.createElement("div");
     productDiv.classList.add("product-container");
     productDiv.innerHTML = `
-    <img class="overlay-icon" src="/Assets/icons/icon-seedling-2.svg"/>
+    <img class="overlay-icon" src="/Assets/icons/icon-seedling-2.svg" alt="seedling icon"/>
             <img class="product-img" src="${product.image}" alt=${
       product.name
     }/>

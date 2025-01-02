@@ -24,6 +24,21 @@ button,
       text-transform: uppercase;
 }
 
+.input-wrapper,
+button,
+input,
+.hamburger-menu,
+.nav-item,
+.contact-item {
+      cursor: pointer;
+}
+
+button:hover {
+      background-color: var(--clr-neutral-100);
+      color: var(--clr-green-400);
+      transition: 0.3s ease-in-out;
+}
+
 .header {
       max-height: 4em;
       padding-left: 0.7em;
@@ -61,11 +76,16 @@ button,
       .nav-item {       
             min-height: 3.5em;
             padding: 0 1em;
+
+            a:focus-visible {
+                  background-color: transparent;
+                  padding: .2em;
+            }
             
             &:hover {
                   background-color: var(--clr-green-400);
-                        color: var(--clr-neutral-100);
-                        
+                  color: var(--clr-neutral-100);
+                  transition: 0.3s ease-in-out;
             }
       }
 }
@@ -109,20 +129,23 @@ button,
             border-radius: 30px;
             padding: 0.2em 0.2em 0.2em 3em;
 
+            &:focus-within {
+                  outline: 1px solid rgb(0, 72, 255);
+            }
+
             input {
                   background-color: inherit;
                   border: none;
+
+                  &:focus-visible {
+                        outline: none;
+                  }
             }
 
             .subscribe-btn {
                   padding: 0.6em 1.5em;
                   border-radius: 20px;
                   border: 1px solid var(--clr-green-400);
-
-                  &:hover {
-                        background-color: var(--clr-neutral-100);
-                        color: var(--clr-green-400);
-                  }
             }
       }
 }
@@ -178,11 +201,6 @@ button,
             padding: 0.6em 1.5em;
             border-radius: 20px;
             border: 1px solid var(--clr-green-400);
-
-            &:hover {
-                  background-color: var(--clr-neutral-100);
-                  color: var(--clr-green-400);
-            }
       }
 }
 
@@ -209,7 +227,8 @@ button,
             line-height: 1.5;
       }
 
-      .contact-item {
+      .contact-item,
+      .footer-links {
             font-weight: var(--fw-semi-bold);
             color: inherit;
 
@@ -217,4 +236,5 @@ button,
                   text-decoration: underline;
             }
       }
+      
 }

@@ -178,12 +178,6 @@ li {
 a {
   text-decoration: none;
   color: var(--clr-accent);
-
-  &:hover,
-  &:focus-visible {
-    color: var(--clr-primary-light-1);
-    text-decoration: underline;
-  }
 }
 
 body {

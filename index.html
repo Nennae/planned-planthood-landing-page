@@ -16,10 +16,10 @@
 </div>
 <nav class="nav-bar">
   <ul class="nav-list">
-    <li class="nav-item">Hem</li>
-    <li class="nav-item">Historik</li>
-    <li class="nav-item">Tips</li>
-    <li class="nav-item">Kontakt</li>
+    <li class="nav-item"><a href="#">Hem</a></li>
+    <li class="nav-item"><a href="#">Historik</a></li>
+    <li class="nav-item"><a href="#">Tips</a></li>
+    <li class="nav-item"><a href="#">Kontakt</a></li>
   </ul>
 </nav>
 </div>
@@ -44,8 +44,8 @@
 <!-- Look into form attributes! -->
 <form action="submit">
   <div class="input-wrapper">
-  <label for="email">email</label>
-  <input type="text" name="email" id="email" placeholder="email@domain.com" required readonly>
+  <label for="email" hidden aria-label="email">email</label>
+  <input type="text" name="email" id="email" placeholder="email@domain.com">
   <button class="subscribe-btn">Skicka</button>
   </div>
 </form>
@@ -78,19 +78,19 @@
   fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
   <div class="footer-contact">
     <img src="./Assets/icons/icon-phone.svg" alt="">
-    <a class="contact-item footer-item">Telefon: 020-1234567</a>
+    <a href="#" class="contact-item footer-item">Telefon: 020-1234567</a>
     </div>
     <div class="footer-contact">
     <img src="./Assets/icons/icon-email.svg" alt="">
-    <a class="contact-item footer-item">info@plannedplant.com</a>
+    <a href="#" class="contact-item footer-item">info@plannedplant.com</a>
   </div>
   </div>
   <nav class="nav-bar">
     <ul class="nav-list">
-      <li class="nav-item">Hem</li>
-      <li class="nav-item">Historik</li>
-      <li class="nav-item">Tips</li>
-      <li class="nav-item">Kontakt</li>
+      <li class="nav-item"><a class="footer-links" href="#">Hem</a></li>
+      <li class="nav-item"><a class="footer-links" href="#">Historik</a></li>
+      <li class="nav-item"><a class="footer-links" href="#">Tips</a></li>
+      <li class="nav-item"><a class="footer-links" href="#">Kontakt</a></li>
     </ul>
   </nav>
 </footer>

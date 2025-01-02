@@ -2,8 +2,6 @@
 
 /*  Get random avatars from API and render next to date and username */
 /* Make form accessible */
-
-
 .header {
       display: flex;
       justify-content: space-between;
@@ -155,7 +153,7 @@
             display: flex;
 
             input {
-                  flex-grow: 2;
+                  flex-grow: 1;
             }
       }
 
@@ -176,7 +174,7 @@
 
             .product-img {
                   object-fit: cover;
-                  height: 15em;
+                  max-height: 15em;
             }
 
             .categories {
